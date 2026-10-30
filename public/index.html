@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta
+    name="description"
+    content="LensForge — embeddable lens configurator for eyewear stores. Interactive demo with a sample frame and mock lens prices."
+  />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>LensForge</title>
+  <style>
+    #lensforge[hidden] {
+      display: none !important;
+    }
+
+    .demo-closed {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: #f1f5f6;
+      color: #0f2a30;
+      font-family: Poppins, system-ui, sans-serif;
+    }
+
+    .demo-closed[hidden] {
+      display: none;
+    }
+
+    .demo-closed__card {
+      width: 100%;
+      max-width: 440px;
+      padding: 36px 32px 32px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(16, 42, 48, 0.06), 0 18px 40px -20px rgba(16, 42, 48, 0.35);
+      text-align: center;
+    }
+
+    .demo-closed__logo {
+      display: block;
+      height: 40px;
+      margin: 0 auto 24px;
+    }
+
+    .demo-closed[data-mode="added"] .demo-closed__logo,
+    .demo-closed:not([data-mode="added"]) .demo-closed__success {
+      display: none;
+    }
+
+    .demo-closed__success {
+      margin-bottom: 18px;
+    }
+
+    .demo-check {
+      display: block;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 12px;
+    }
+
+    .demo-check__ring {
+      fill: #e8f3f1;
+      stroke: #0f766e;
+      stroke-width: 3;
+      stroke-dasharray: 208;
+      stroke-dashoffset: 0;
+      transform: rotate(-90deg);
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .demo-check__tick {
+      fill: none;
+      stroke: #0f766e;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 40;
+      stroke-dashoffset: 0;
+    }
+
+    .demo-closed__badge {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 999px;
+      background: #e8f3f1;
+      color: #0f766e;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .demo-closed.is-animating .demo-closed__card {
+      animation: demo-card-in 0.3s ease-out both;
+    }
+
+    .demo-closed.is-animating .demo-check {
+      animation: demo-check-pop 0.4s 0.75s ease-out both;
+    }
+
+    .demo-closed.is-animating .demo-check__ring {
+      animation: demo-ring-draw 0.6s 0.1s ease-out both;
+    }
+
+    .demo-closed.is-animating .demo-check__tick {
+      animation: demo-tick-draw 0.35s 0.55s ease-out both;
+    }
+
+    .demo-closed.is-animating .demo-closed__badge {
+      animation: demo-badge-in 0.3s 0.8s ease-out both;
+    }
+
+    @keyframes demo-card-in {
+      from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes demo-ring-draw {
+      from {
+        stroke-dashoffset: 208;
+        fill-opacity: 0;
+      }
+
+      70% {
+        fill-opacity: 0;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+      }
+    }
+
+    @keyframes demo-tick-draw {
+      from {
+        stroke-dashoffset: 40;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes demo-check-pop {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
+    @keyframes demo-badge-in {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .demo-closed__title {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+
+    .demo-closed__text {
+      margin: 0 0 24px;
+      color: #5f7175;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .demo-closed__button {
+      width: 100%;
+      height: 52px;
+      border: 0;
+      border-radius: 12px;
+      background: #0f766e;
+      color: #ffffff;
+      font: 600 16px Poppins, system-ui, sans-serif;
+      cursor: pointer;
+      box-shadow: 0 10px 20px -10px rgba(15, 118, 110, 0.7);
+      transition: background-color 0.2s;
+    }
+
+    .demo-closed__button:hover {
+      background: #0b5f59;
+    }
+
+    .demo-closed__button:focus-visible {
+      outline: 3px solid rgba(15, 118, 110, 0.35);
+      outline-offset: 3px;
+    }
+
+    .demo-toast {
+      position: fixed;
+      top: 72px;
+      right: 24px;
+      z-index: 1100;
+      width: max-content;
+      max-width: min(400px, calc(100% - 32px));
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: #0f2a30;
+      color: #ffffff;
+      font: 500 14px/1.45 Poppins, system-ui, sans-serif;
+      box-shadow: 0 12px 28px -12px rgba(16, 42, 48, 0.55);
+      opacity: 0;
+      transform: translateY(-8px);
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .demo-toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 991.98px) {
+      .demo-toast {
+        top: auto;
+        right: auto;
+        bottom: calc(92px + env(safe-area-inset-bottom));
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, 12px);
+      }
+
+      .demo-toast.is-visible {
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .demo-toast {
+        transition: none;
+      }
+
+      .demo-closed.is-animating .demo-closed__card,
+      .demo-closed.is-animating .demo-check,
+      .demo-closed.is-animating .demo-check__ring,
+      .demo-closed.is-animating .demo-check__tick,
+      .demo-closed.is-animating .demo-closed__badge {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="lensforge" data-product-id="demo-frame" data-upload-token="demo-token"></div>
+
+  <section id="lensforge-demo-closed" class="demo-closed" aria-labelledby="lensforge-demo-closed-title" hidden>
+    <div class="demo-closed__card">
+      <img class="demo-closed__logo" src="%PUBLIC_URL%/images/logo/logo.svg" alt="LensForge" />
+      <div class="demo-closed__success">
+        <svg class="demo-check" viewBox="0 0 72 72" aria-hidden="true">
+          <circle class="demo-check__ring" cx="36" cy="36" r="33" />
+          <path class="demo-check__tick" d="M23 37.5l9 9 17-19" />
+        </svg>
+        <span class="demo-closed__badge">Added to cart</span>
+      </div>
+      <h1 id="lensforge-demo-closed-title" class="demo-closed__title"></h1>
+      <p id="lensforge-demo-closed-text" class="demo-closed__text"></p>
+      <button id="lensforge-demo-reopen" class="demo-closed__button" type="button">Back to lens selection</button>
+    </div>
+  </section>
+
+  <div id="lensforge-demo-toast" class="demo-toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // ?productId=unknown is a convenient way to preview the error state.
+    (function () {
+      if (new URLSearchParams(window.location.search).has("productId")) {
+        document.getElementById("lensforge").removeAttribute("data-product-id");
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const widget = document.getElementById("lensforge");
+      const closedScreen = document.getElementById("lensforge-demo-closed");
+      const closedTitle = document.getElementById("lensforge-demo-closed-title");
+      const closedText = document.getElementById("lensforge-demo-closed-text");
+      const reopenButton = document.getElementById("lensforge-demo-reopen");
+      const toast = document.getElementById("lensforge-demo-toast");
+      const helpMessage = "We get it, you need a hand. Live chat isn't part of this demo, though, so enjoy exploring!";
+      const closedMessages = {
+        close: {
+          title: "In a real store, you'd be back on the product page now",
+          text: "This is a demo, though, so there's no product page to return to. Your lens selection is saved — pick up right where you left off.",
+        },
+        added: {
+          title: "Thanks for choosing your lenses!",
+          text: "In a real store, you'd be back on the product page now. This is a demo, though, so your selection is saved — pick up right where you left off.",
+        },
+      };
+      let returnFocusTo = null;
+      let toastTimer = null;
+
+      function collapseWidget(mode) {
+        returnFocusTo = document.activeElement;
+        closedScreen.dataset.mode = mode;
+        closedTitle.textContent = closedMessages[mode].title;
+        closedText.textContent = closedMessages[mode].text;
+        widget.hidden = true;
+        closedScreen.hidden = false;
+        closedScreen.classList.remove("is-animating");
+        void closedScreen.offsetWidth;
+        closedScreen.classList.add("is-animating");
+        reopenButton.focus();
+      }
+
+      widget.addEventListener("lensforge:close", function () {
+        collapseWidget("close");
+      });
+
+      widget.addEventListener("lensforge:add-to-cart", function () {
+        collapseWidget("added");
+      });
+
+      reopenButton.addEventListener("click", function () {
+        closedScreen.hidden = true;
+        widget.hidden = false;
+        if (returnFocusTo && widget.contains(returnFocusTo)) {
+          returnFocusTo.focus();
+        }
+      });
+
+      widget.addEventListener("lensforge:help", function () {
+        toast.textContent = helpMessage;
+        toast.classList.add("is-visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("is-visible");
+        }, 5000);
+      });
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 452">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9eef2"/><stop offset="1" stop-color="#f4f7f1"/></linearGradient></defs>
+<rect width="500" height="452" fill="url(#sky)"/>
+<circle cx="365" cy="92" r="44" fill="#f7e0a9"/>
+<path d="M0 300 90 205l70 70 90-100 110 120 70-60 70 70v147H0z" fill="#9fc4b1"/>
+<path d="M0 345 90 280l90 60 95-80 120 85 105-55v162H0z" fill="#6e9e8a"/>
+<rect y="360" width="500" height="92" fill="#e7eee8"/>
+<circle cx="110" cy="390" r="34" fill="#f5b7a8"/><path d="M110 370c-16 0-26 11-26 26h52c0-15-10-26-26-26z" fill="#fff3e0"/>
+<text x="250" y="420" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#5f7175">Without polarized filter</text>
+</svg>

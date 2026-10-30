@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#lensforge,
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+  transition: 0.3s all;
+}
+
+a {
+  color: #292929;
+}
+
+a:hover {
+  color: #0f766e;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}

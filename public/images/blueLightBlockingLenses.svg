@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf4f2"/><stop offset="1" stop-color="#f7fbfa"/></linearGradient></defs>
+<rect width="720" height="620" fill="url(#bg)"/>
+
+<circle cx="360" cy="280" r="150" fill="#d6ebe7"/>
+<circle cx="360" cy="280" r="112" fill="#f8fcfb" stroke="#0f766e" stroke-width="8"/>
+<path d="M110 190c50 28 95 42 150 42M610 190c-50 28-95 42-150 42M110 370c50-28 95-42 150-42M610 370c-50-28-95-42-150-42" stroke="#0f766e" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+<path d="M250 280h220M320 240l-40 40 40 40M400 240l40 40-40 40" stroke="#0f766e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="360" y="575" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="600" fill="#0f2a30">Blue light filter</text>
+</svg>

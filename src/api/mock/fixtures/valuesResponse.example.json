@@ -1,0 +1,50 @@
+{
+  "status": "success",
+  "time": 1761696000,
+  "product_price": 300,
+  "lens_price": 0,
+  "total_price": 300,
+  "data": {
+    "purpose": {
+      "nonPrescription": { "price": 0, "selected": true },
+      "singleVisionDistance": { "price": 49 },
+      "singleVisionReading": { "price": 49 },
+      "singleVisionWork": { "price": 49 },
+      "progressivetrivexLens": { "price": 149 }
+    },
+    "type": {
+      "clearLenses": { "price": 0, "selected": true },
+      "tintedSunglassLensesSolid": { "price": 39 },
+      "tintedSunglassLensesPolarized": { "price": 79 },
+      "tintedSunglassLensesPolarizedMirror": { "price": 99 },
+      "transitionsLensesSignatureGen8": { "price": 99 },
+      "transitionsLensesXTractive": { "price": 129 },
+      "transitionsLensesDriveWear": { "price": 149 },
+      "transitionsLensesXTractivePolarized": { "price": 159 }
+    },
+    "options": {
+      "cr39Lens": { "price": 0, "selected": true },
+      "polycarbonateLens": { "price": 39 },
+      "trivexLens": { "price": 49 },
+      "highIndex167Lens": { "price": 79 },
+      "highIndex174Lens": { "price": 129 }
+    },
+    "sunglassLenses": { "minTotalPrice": 39 },
+    "upgrades": {
+      "scratchResistantCoating": { "price": 15 },
+      "hydrophobicCoating": { "price": 19 },
+      "antiReflectiveCoating": { "price": 25 },
+      "blueLightBlockingLenses": { "price": 29 }
+    },
+    "extras": {
+      "prism": { "price": 30 }
+    }
+  },
+  "cart_calculated_data": {
+    "options": {
+      "type": { "clearLenses": 0 },
+      "options": { "cr39Lens": 0 }
+    },
+    "total_price": 300
+  }
+}

@@ -1,0 +1,1378 @@
+#lensforge {
+  background: linear-gradient(90deg, #ffffff 50%, #f1f5f6 50%);
+}
+
+#lensforge .lensforge_header {
+  padding: 10px 0;
+  box-shadow: 0 1px 0 #e4ebed;
+}
+
+#lensforge .header-wrapper {
+  align-items: center;
+}
+
+#lensforge .logo {
+  display: block;
+  flex: none;
+  width: auto;
+  height: 30px;
+}
+
+#lensforge #start_live_chat {
+  margin-right: 44px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #e8f3f1;
+}
+
+#lensforge #start_live_chat span {
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#lensforge #start_live_chat svg path {
+  fill: #0f766e;
+}
+
+#lensforge .ant-steps {
+  gap: 8px;
+  max-width: 580px;
+}
+
+#lensforge .ant-steps-item {
+  flex: 1;
+  padding: 0 0 9px;
+}
+
+#lensforge .ant-steps-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 4px;
+  background: #e2e9eb;
+}
+
+#lensforge .ant-steps-item-finish::after {
+  background: #0f766e;
+}
+
+#lensforge .ant-steps-item-active::after {
+  background: linear-gradient(90deg, #0f766e 50%, #e2e9eb 50%);
+}
+
+#lensforge .ant-steps-item .ant-steps-item-title::after {
+  display: none;
+}
+
+#lensforge .ant-steps-item-icon {
+  width: 20px;
+  height: 20px;
+  background: #e2e9eb;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#lensforge .ant-steps-item-icon > .ant-steps-icon {
+  color: #5b6b70;
+}
+
+#lensforge .ant-steps-item-active .ant-steps-item-icon {
+  background: #0f766e;
+}
+
+#lensforge .ant-steps-item-active .ant-steps-item-icon > .ant-steps-icon {
+  color: #ffffff;
+}
+
+#lensforge .ant-steps-item-finish .ant-steps-item-icon {
+  background: #d4ebe7;
+}
+
+#lensforge .ant-steps-item-finish .ant-steps-item-icon svg {
+  fill: #0f766e;
+}
+
+#lensforge .ant-steps-item-title {
+  color: #5b6b70;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#lensforge .ant-steps-item-active .ant-steps-item-title {
+  color: #0f2a30;
+}
+
+#lensforge .title {
+  margin-bottom: 28px;
+  color: #0f2a30;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  text-transform: none;
+}
+
+#lensforge .screen_description {
+  margin-top: -14px;
+  margin-bottom: 28px;
+  color: #5f7175;
+  font-weight: 400;
+}
+
+#lensforge .ant-space-vertical {
+  gap: 12px !important;
+}
+
+#lensforge .ant-card.panel {
+  border: 1px solid transparent;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(16, 42, 48, 0.06), 0 2px 6px rgba(16, 42, 48, 0.06);
+  transition: box-shadow 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+#lensforge .ant-card-hoverable.panel:hover {
+  border-color: transparent;
+  box-shadow: 0 12px 28px -12px rgba(16, 42, 48, 0.28), 0 2px 6px rgba(16, 42, 48, 0.06);
+}
+
+#lensforge .ant-card.panel.ant-card-active {
+  border-color: #0f766e;
+  background: #f4fbfa;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.16);
+}
+
+#lensforge .ant-card.panel.disabled {
+  background: #f7f9fa;
+  box-shadow: none;
+}
+
+#lensforge .ant-flex .ant-card-body .panel_label {
+  top: 7px;
+  left: 38px;
+  padding: 0 9px;
+  border-radius: 999px;
+  background: #fff3e0;
+  color: #b45309;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+#lensforge .panel .ant-card-body > div:last-child:has(> img) {
+  display: flex;
+  flex: 0 0 64px;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  border-radius: 14px;
+  background: #eaf4f2;
+}
+
+#lensforge .panel .ant-card-body > div:last-child:has(> img) img {
+  max-width: 40px;
+  max-height: 34px;
+}
+
+#lensforge .panel .ant-card-body > div:last-child > img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(83%) saturate(6804%) hue-rotate(169deg) brightness(89%) contrast(88%);
+}
+
+#lensforge .panel .panel-content img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(83%) saturate(6804%) hue-rotate(169deg) brightness(89%) contrast(88%);
+}
+
+#lensforge .ant-card h5 {
+  color: #0f2a30;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#lensforge .ant-card .panel-description {
+  color: #5f7175;
+  font-weight: 400;
+}
+
+#lensforge .lensforge_screen .panel .panel_price__item,
+#lensforge .ant-flex .screen-title__lensOptions .panel-title-clue span.panel_price__item {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+#lensforge .ant-flex .screen-title__lensOptions .panel-content .panelDevider {
+  background-color: #e4ebed;
+}
+
+#lensforge .button {
+  height: 52px;
+  border-radius: 12px;
+  background-color: #0f766e;
+  border-color: #0f766e;
+  font-weight: 600;
+  text-transform: none;
+  box-shadow: 0 10px 20px -10px rgba(15, 118, 110, 0.7);
+}
+
+#lensforge .button:not([disabled]):hover {
+  background-color: #0b5f59;
+  border-color: #0b5f59;
+}
+
+#lensforge .button[disabled] {
+  opacity: 1;
+  background-color: #c9d5d8;
+  border-color: #c9d5d8;
+  box-shadow: none;
+}
+
+#lensforge .lensforge__back {
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#lensforge .lensforge__back svg path {
+  stroke: #0f766e;
+}
+
+#lensforge .lensforge_loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+#lensforge .lensforge_image .full-price {
+  bottom: 24px;
+  align-items: center;
+  padding: 16px 22px;
+  border: none;
+  border-top: 1px solid #e4ebed;
+  border-radius: 16px;
+  background: transparent;
+}
+
+#lensforge .lensforge_image .full-price > div:last-child span {
+  color: #0f2a30;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#lensforge .screen-title__coating .ant-card.panel.ant-card-active {
+  border-color: transparent;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(16, 42, 48, 0.06), 0 2px 6px rgba(16, 42, 48, 0.06);
+}
+
+#lensforge .screen-title__coating .ant-card.panel:has(.ant-switch-checked) {
+  border-color: #0f766e;
+  background: #f4fbfa;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+#lensforge .button.button-sec {
+  background-color: #e8f3f1;
+  border-color: #e8f3f1;
+  color: #0f766e;
+  box-shadow: none;
+}
+
+#lensforge .button.button-sec:not([disabled]):hover {
+  background-color: #d7ebe7;
+  border-color: #d7ebe7;
+  color: #0b5f59;
+}
+
+#lensforge .ant-flex > .lensforge_status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  justify-content: flex-start;
+  padding-top: 56px;
+}
+
+#lensforge .lensforge_status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 460px;
+  width: 100%;
+  padding: 56px 0;
+}
+
+#lensforge .lensforge_status .button {
+  margin-top: 20px;
+  padding: 0 34px;
+}
+
+#lensforge .lensforge_status--loading {
+  align-items: center;
+}
+
+#lensforge .screen-title__transitionsType .panel-title-clue {
+  flex-basis: 40%;
+}
+
+#lensforge .screen-title__transitionsType .panel-title-clue h5 {
+  width: max-content;
+}
+
+#lensforge .lensforge_modal__wrapp,
+#lensforge .lensforge-modal__wrapp {
+  border-radius: 16px;
+}
+
+#lensforge .lensforge-modal__body {
+  font-family: Poppins, system-ui, sans-serif;
+  color: #0f2a30;
+}
+
+#lensforge .lensforge-modal__body header:after {
+  border-color: #0f766e;
+}
+
+#lensforge .lensforge-modal__close-icon {
+  color: #5f7175;
+}
+
+#lensforge .prism-illustration {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+#lensforge .prism-upload-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  border: 1px dashed #bcd8d4;
+  border-radius: 16px;
+  color: #5f7175;
+  text-align: center;
+}
+
+#lensforge .lens-power-form {
+  gap: 10px;
+}
+
+#lensforge .lens-power-form button {
+  width: calc(25% - 8px);
+  border-radius: 12px;
+  border-color: #e4ebed;
+  color: #0f2a30;
+  font-family: Poppins, system-ui, sans-serif;
+}
+
+#lensforge .lens-power-form button:hover,
+#lensforge .lens-power-form button.active {
+  border-color: #0f766e;
+  background: #f4fbfa;
+  color: #0f766e;
+}
+
+#lensforge .ant-upload-wrapper .ant-upload-drag {
+  border-color: #d7e5e4;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+#lensforge .ant-upload-wrapper .ant-upload-drag:hover {
+  border-color: #0f766e;
+}
+
+#lensforge .ant-upload-drag .ant-upload-drag-icon .anticon {
+  color: #0f766e;
+}
+
+#lensforge .infoPopup__text button {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+#lensforge .infoPopup__text button:hover {
+  background: #0b5f59;
+}
+
+#lensforge .lensParams-items--yellow .lensParams-item__media div,
+#lensforge .lensParams-items--yellow .lensParams-item__media div svg > * {
+  color: #0f766e !important;
+  fill: #0f766e !important;
+}
+
+#lensforge .ant-card .panel-finish_option,
+#lensforge .ant-card .panel-finish_step {
+  color: #0f2a30;
+}
+
+#lensforge .product_information #product_title {
+  margin-top: 50px;
+  color: #0f2a30;
+  font-weight: 500;
+}
+
+@media (max-width: 1299.98px) {
+  #lensforge .lensforge_header {
+    padding: 10px 20px;
+  }
+
+  #lensforge .ant-flex > div {
+    padding: 0 20px;
+  }
+
+  .App .lensforge__backFrame {
+    left: 20px;
+  }
+}
+
+@keyframes lensforge-image-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lensforge-item-slide-in {
+  from {
+    transform: translateX(32px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#lensforge .product_image img {
+  animation: lensforge-image-reveal 0.7s ease-out backwards;
+}
+
+#lensforge .lensforge_screen .ant-space-item {
+  animation: lensforge-item-slide-in 0.45s ease-out backwards;
+}
+
+#lensforge .lensforge_screen .ant-space-item:nth-child(1) { animation-delay: 0.05s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(2) { animation-delay: 0.15s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(3) { animation-delay: 0.25s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(4) { animation-delay: 0.35s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(5) { animation-delay: 0.45s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(6) { animation-delay: 0.55s; }
+#lensforge .lensforge_screen .ant-space-item:nth-child(n + 7) { animation-delay: 0.65s; }
+
+@media (prefers-reduced-motion: reduce) {
+  #lensforge .product_image img,
+  #lensforge .lensforge_screen .ant-space-item {
+    animation: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #lensforge .lensParams,
+  #lensforge .infoPopup {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #lensforge {
+    background: linear-gradient(90deg, #ffffff 40%, #f1f5f6 40%);
+  }
+
+  #lensforge .container-default {
+    padding: 0;
+  }
+
+  #lensforge .lensforge_header {
+    padding: 10px 24px;
+  }
+
+  #lensforge .ant-flex {
+    gap: 0;
+  }
+
+  #lensforge .ant-flex > div {
+    padding: 0 32px;
+  }
+
+  #lensforge .ant-flex > .lensforge_image {
+    flex: 0 0 40%;
+    width: 40%;
+  }
+
+  #lensforge .ant-flex > .lensforge_screen,
+  #lensforge .ant-flex > .lensforge_status {
+    flex: 1 1 60%;
+  }
+
+  #lensforge .lensforge__backFrame {
+    left: 24px;
+  }
+
+  #lensforge .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #lensforge {
+    height: auto;
+    min-height: 100%;
+    background: #f1f5f6;
+  }
+
+  #lensforge .App {
+    height: auto;
+  }
+
+  #lensforge .header-wrapper {
+    gap: 16px;
+  }
+
+  #lensforge .ant-steps {
+    position: relative;
+    flex: 1 1 auto;
+    flex-direction: row;
+    gap: 6px;
+    max-width: 360px;
+    margin: 0 auto;
+    counter-reset: lensforge-step;
+  }
+
+  #lensforge .ant-steps .ant-steps-item {
+    position: static;
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    padding: 22px 0 6px;
+    overflow: visible;
+    counter-increment: lensforge-step;
+  }
+
+  #lensforge .ant-steps .ant-steps-item::after {
+    content: none;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-container,
+  #lensforge .ant-steps .ant-steps-item-content {
+    position: static;
+    display: block;
+    min-height: 0;
+    margin: 0;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-icon {
+    display: none;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-tail {
+    position: static;
+    display: block;
+    width: auto;
+    height: 4px;
+    padding: 0;
+    border-radius: 4px;
+    background: #e2e9eb;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-tail::after {
+    content: none;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-finish .ant-steps-item-tail {
+    background: #0f766e;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-active .ant-steps-item-tail {
+    background: linear-gradient(90deg, #0f766e 50%, #e2e9eb 50%);
+  }
+
+  #lensforge .ant-steps .ant-steps-item-title {
+    display: none;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-active .ant-steps-item-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0;
+    color: #0f2a30;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+
+  #lensforge .ant-steps .ant-steps-item-active .ant-steps-item-title::before {
+    content: "Step " counter(lensforge-step) " · ";
+    color: #5f7175;
+    font-weight: 500;
+  }
+
+  #lensforge .lensforge_main {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+
+  #lensforge .ant-flex {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+  }
+
+  #lensforge .ant-flex > div {
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  #lensforge .ant-flex > .lensforge_image {
+    display: block;
+    flex: none;
+    width: 100%;
+    padding: 12px 24px 20px;
+    background: #ffffff;
+    box-shadow: 0 1px 0 #e4ebed;
+  }
+
+  #lensforge .ant-flex > .lensforge_image:empty {
+    display: none;
+  }
+
+  #lensforge .lensforge__backFrame {
+    position: static;
+    max-width: 640px;
+    margin: 0 auto 8px;
+  }
+
+  #lensforge .product_information,
+  #lensforge .lensColorFilter {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    column-gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #lensforge .product_information {
+    grid-template-areas: "image ." "image title" "image extra" "image .";
+  }
+
+  #lensforge .lensColorFilter {
+    grid-template-areas: "image ." "image title" "image extra" "image .";
+    gap: 0 24px;
+  }
+
+  #lensforge .product_image {
+    display: contents;
+  }
+
+  #lensforge .product_image img {
+    grid-area: image;
+    width: 100%;
+  }
+
+  #lensforge .product_information #product_title {
+    grid-area: title;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #lensforge .product_choosen-color {
+    position: static;
+    grid-area: extra;
+    justify-self: start;
+    margin-top: 10px;
+  }
+
+  #lensforge .lensColorFilter_image {
+    grid-area: image;
+    width: 200px;
+    height: 156px;
+  }
+
+  #lensforge .lensColorFilter_image svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #lensforge .lensColorFilter_title {
+    grid-area: title;
+    text-align: left;
+  }
+
+  #lensforge .lensColorFilter_title p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #lensforge .lensColorFilter .sliderRange-wrapper,
+  #lensforge .lensColorFilter .ant-btn {
+    grid-area: extra;
+    margin-top: 12px;
+  }
+
+  #lensforge .lensColorFilter .ant-btn {
+    position: static;
+    justify-self: start;
+    transform: none;
+  }
+
+  #lensforge .ant-flex > .lensforge_screen {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 24px 24px 120px;
+    overflow: visible;
+  }
+
+  #lensforge .lensforge__prev-wrapp {
+    margin-top: 0;
+  }
+
+  #lensforge .title,
+  #lensforge .screen-title__lenses .title {
+    margin: 8px 0 20px;
+  }
+
+  #lensforge .lensforge_image .full-price {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    width: auto;
+    min-height: 76px;
+    padding: 12px max(24px, calc(50% - 320px)) calc(12px + env(safe-area-inset-bottom));
+    border: 0;
+    border-radius: 0;
+    background: #ffffff;
+    box-shadow: 0 -1px 0 #e4ebed, 0 -12px 24px -16px rgba(16, 42, 48, 0.25);
+  }
+
+  #lensforge .lensforge_image .full-price > div:first-child {
+    color: #5f7175;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #lensforge .lensforge_image .full-price > div:last-child span {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #lensforge .lensforge_screen > .lensforge__next,
+  #lensforge .screen-title__finish > .button {
+    position: fixed;
+    right: max(24px, calc(50% - 320px));
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    z-index: 51;
+    width: min(320px, calc(100% - 200px));
+    height: 52px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #lensforge .screen-title__finish > .button {
+    left: max(24px, calc(50% - 320px));
+    width: auto;
+  }
+
+  #lensforge .ant-flex > .lensforge_status {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  #lensforge .lensforge-modal.polarized-lenses .lensforge-modal__wrapp {
+    width: min(560px, calc(100% - 32px));
+  }
+
+  #lensforge .lensforge-modal__close {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 1px 4px rgba(16, 42, 48, 0.16);
+  }
+
+  #lensforge .lensforge-modal.polarized-lenses .lensforge-modal__article {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  #lensforge .lensforge-modal__diff-slider {
+    flex: none;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  #lensforge .lensforge-modal.polarized-lenses .lensforge-modal__body {
+    flex: none;
+    margin: 0;
+    padding: 24px 28px 28px;
+  }
+
+  #lensforge .screen-title__finish::after {
+    content: "";
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    height: calc(76px + env(safe-area-inset-bottom));
+    background: #ffffff;
+    box-shadow: 0 -1px 0 #e4ebed, 0 -12px 24px -16px rgba(16, 42, 48, 0.25);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #lensforge .lensforge_header {
+    padding: 8px 16px 12px;
+  }
+
+  #lensforge .header-wrapper {
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
+
+  #lensforge .logo {
+    margin-right: auto;
+  }
+
+  #lensforge #start_live_chat {
+    width: 40px;
+    height: 40px;
+    margin-right: 36px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #lensforge #start_live_chat span {
+    display: none;
+  }
+
+  #lensforge #lensforge__close {
+    top: 10px;
+  }
+
+  #lensforge .ant-steps {
+    order: 3;
+    flex: 0 0 100%;
+    max-width: none;
+    margin: 4px 0 0;
+  }
+
+  #lensforge .ant-flex > .lensforge_image {
+    padding: 8px 16px 14px;
+  }
+
+  #lensforge .product_information,
+  #lensforge .lensColorFilter {
+    grid-template-columns: 120px 1fr;
+    column-gap: 16px;
+  }
+
+  #lensforge .product_information #product_title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #lensforge .product_choosen-color {
+    margin-top: 6px;
+    padding: 4px;
+  }
+
+  #lensforge .product_choosen-color-icon {
+    flex-basis: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  #lensforge .product_choosen-color-title span {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  #lensforge .product_choosen-color-title p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #lensforge .lensColorFilter_image {
+    width: 120px;
+    height: 94px;
+  }
+
+  #lensforge .lensColorFilter_title p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #lensforge .lensColorFilter_title span {
+    font-size: 12px;
+  }
+
+  #lensforge .lensColorFilter .sliderRange-wrapper {
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  #lensforge .ant-flex > .lensforge_screen {
+    padding: 16px 16px 112px;
+  }
+
+  #lensforge .title,
+  #lensforge .screen-title__lenses .title {
+    margin: 6px 0 16px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  #lensforge .screen_description {
+    margin-top: -8px;
+    margin-bottom: 16px;
+  }
+
+  #lensforge .ant-flex .lensforge_screen .ant-card-body {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  #lensforge .ant-flex .lensforge_screen .ant-card-body:has(.panel_label) {
+    padding-top: 30px;
+  }
+
+  #lensforge .ant-flex .ant-card-body .panel_label {
+    top: 8px;
+    left: 16px;
+  }
+
+  #lensforge .panel .ant-card-body > div:last-child:has(> img) {
+    flex: 0 0 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  #lensforge .panel .ant-card-body > div:last-child:has(> img) img {
+    max-width: 28px;
+    max-height: 26px;
+  }
+
+  #lensforge .ant-card h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #lensforge .ant-card .panel-description {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  #lensforge .ant-flex .lensforge_screen .panel-content {
+    gap: 12px;
+  }
+
+  #lensforge .ant-flex .lensforge_screen .panel-title-clue h5 {
+    width: auto;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content .panel-title-clue {
+    flex: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-right: 28px;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content .panel-title-clue img {
+    margin: 0;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content .panel-title-clue .panel__color_price {
+    margin-left: auto;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content .panel-title-clue .panel_price {
+    margin: 0;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-content .panelDevider {
+    width: auto;
+    height: 1px;
+    margin: 0;
+  }
+
+  #lensforge .ant-flex .screen-title__lensOptions .panel-description {
+    padding: 0;
+  }
+
+  #lensforge .ant-flex .lensforge_screen .ant-card-body:has(.colors_wrapper) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "content price" "colors colors";
+    align-items: center;
+  }
+
+  #lensforge .ant-card-body:has(.colors_wrapper) > .panel-content {
+    grid-area: content;
+  }
+
+  #lensforge .ant-card-body:has(.colors_wrapper) > .panel__color_price {
+    display: contents;
+  }
+
+  #lensforge .ant-card-body:has(.colors_wrapper) .panel_price {
+    grid-area: price;
+    margin: 0;
+  }
+
+  #lensforge .ant-card-body:has(.colors_wrapper) .colors_wrapper {
+    grid-area: colors;
+    justify-content: flex-start;
+    gap: 8px 12px;
+    max-width: none;
+  }
+
+  #lensforge .rx_form_row .side_cell,
+  #lensforge .rx_form_row.header .rx_form_cell:first-child {
+    flex: 0 0 64px;
+  }
+
+  #lensforge .rx_form_cell {
+    min-width: 0;
+    padding: 8px 4px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #lensforge .rx_form_cell .ant-select-selector {
+    padding: 0 4px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #lensforge .rx_form_cell .ant-select-selection-item {
+    padding-inline-end: 0;
+  }
+
+  #lensforge .rx_form_cell .ant-select-arrow {
+    display: none;
+  }
+
+  #lensforge .rx_form_buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #lensforge .rx_form_buttons > div,
+  #lensforge .rx_form_buttons .button {
+    width: 100%;
+  }
+
+  #lensforge .rx_form_buttons .button {
+    margin-top: 0;
+    padding: 0 24px;
+  }
+
+  #lensforge .ant-flex .screen-title__finish .ant-card-body {
+    padding: 20px 16px;
+  }
+
+  #lensforge .ant-flex .screen-title__finish .panel-finish_table {
+    padding: 16px 0;
+  }
+
+  #lensforge .panel-finish_step {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    column-gap: 16px;
+    padding: 5px 0;
+    line-height: 20px;
+  }
+
+  #lensforge .panel-finish_step div {
+    width: auto;
+  }
+
+  #lensforge .panel-finish_option {
+    grid-row: 1;
+    grid-column: 2;
+    max-width: none;
+  }
+
+  #lensforge .panel-finish_popover {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 11px;
+    text-align: right;
+  }
+
+  #lensforge .lensforge-modal__wrapp,
+  #lensforge .lensforge-modal.polarized-lenses .lensforge-modal__wrapp {
+    inset: auto 0 0 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 92vh;
+    max-height: 92dvh;
+    border-radius: 20px 20px 0 0;
+    transform: none;
+    overflow-y: auto;
+  }
+
+  #lensforge .lensforge-modal__article,
+  #lensforge .lensforge-modal.prism .lensforge-modal__article {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  #lensforge .lensforge-modal__article aside,
+  #lensforge .lensforge-modal__prism-form_aside {
+    flex: none;
+    height: 200px;
+    padding: 20px;
+  }
+
+  #lensforge .lensforge-modal__article aside img {
+    object-fit: contain;
+  }
+
+  #lensforge .lensforge-modal__prism-form_upload-wrap {
+    height: 100%;
+  }
+
+  #lensforge .lensforge-modal__body,
+  #lensforge .lensforge-modal.polarized-lenses .lensforge-modal__body {
+    flex: none;
+    margin: 0;
+    padding: 24px 20px 28px;
+  }
+
+  #lensforge .lensforge-modal__body header {
+    font-size: 18px;
+  }
+
+  #lensforge .lensforge-modal__body header:after {
+    margin: 14px 0;
+  }
+
+  #lensforge .lensforge-modal__body main {
+    margin-bottom: 20px;
+  }
+
+  #lensforge .lensforge-modal__body footer .button {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 24px;
+  }
+
+  #lensforge .lensParams,
+  #lensforge .infoPopup {
+    align-items: flex-end;
+  }
+
+
+  #lensforge .lensParams-wrapper,
+  #lensforge .infoPopup-wrapper {
+    width: 100%;
+    max-height: 92vh;
+    max-height: 92dvh;
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+
+  #lensforge .lensParams-header {
+    padding: 36px 20px 20px;
+  }
+
+  #lensforge .lensParams-items {
+    gap: 0;
+    padding: 4px 20px 24px;
+    border-radius: 0;
+  }
+
+  #lensforge .lensParams-items .lensParams-item {
+    width: 100%;
+    margin: 16px 0 0;
+  }
+
+  #lensforge .infoPopup-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  #lensforge .infoPopup__media {
+    flex: 0 0 200px;
+    border-radius: 20px 20px 0 0;
+    background-color: #f1f5f6;
+    background-size: contain;
+  }
+
+  #lensforge .infoPopup__text {
+    flex: none;
+    padding: 24px 20px 28px;
+  }
+
+  #lensforge .infoPopup__text button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #lensforge .infoPopup-wrapper > button svg {
+    color: #0f2a30;
+  }
+}
+
+@media (max-width: 399.98px) {
+  #lensforge .logo {
+    height: 35px;
+  }
+
+  #lensforge .title,
+  #lensforge .screen-title__lenses .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #lensforge .product_information,
+  #lensforge .lensColorFilter {
+    grid-template-columns: 104px 1fr;
+  }
+
+  #lensforge .lensColorFilter_image {
+    width: 104px;
+    height: 81px;
+  }
+
+  #lensforge .lensforge_screen > .lensforge__next {
+    width: calc(100% - 176px);
+  }
+}
+
+.ant-modal-root:has(.lensforge-confirm) .ant-modal-mask {
+  background: rgba(15, 42, 48, 0.45);
+}
+
+.ant-modal.lensforge-confirm {
+  max-width: calc(100% - 32px);
+}
+
+.ant-modal.lensforge-confirm .ant-modal-content {
+  padding: 28px 28px 24px;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(16, 42, 48, 0.06), 0 24px 48px -20px rgba(16, 42, 48, 0.45);
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-content {
+  max-width: none;
+  color: #0f2a30;
+  font-family: Poppins, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn {
+  height: 44px;
+  margin: 0;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 12px;
+  font-family: Poppins, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn-default {
+  background: #e8f3f1;
+  color: #0f766e;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn-default:not(:disabled):hover {
+  background: #d7ebe7;
+  color: #0b5f59;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn-primary {
+  background: #0f766e;
+  color: #ffffff;
+  box-shadow: 0 10px 20px -10px rgba(15, 118, 110, 0.7);
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn-primary:not(:disabled):hover {
+  background: #0b5f59;
+}
+
+.ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.35);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767.98px) {
+  .ant-modal-wrap:has(.lensforge-confirm) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .ant-modal.lensforge-confirm {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    vertical-align: bottom;
+  }
+
+  .ant-modal.lensforge-confirm .ant-modal-content {
+    padding: 28px 20px calc(20px + env(safe-area-inset-bottom));
+    border-radius: 20px 20px 0 0;
+  }
+
+  .ant-modal.lensforge-confirm .ant-modal-confirm-btns {
+    flex-direction: column-reverse;
+  }
+
+  .ant-modal.lensforge-confirm .ant-modal-confirm-btns .ant-btn {
+    width: 100%;
+    height: 52px;
+  }
+}

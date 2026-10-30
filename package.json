@@ -1,0 +1,72 @@
+{
+  "name": "lensforge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@reduxjs/toolkit": "^2.2.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.101",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "antd": "^5.18.3",
+    "axios": "^1.7.2",
+    "formik": "^2.4.6",
+    "react": "^18.3.1",
+    "react-compare-image": "^3.4.0",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.81.0",
+    "yup": "^1.4.0",
+    "@fontsource/poppins": "^5.1.1"
+  },
+  "scripts": {
+    "start": "dotenv -e .env.development react-app-rewired start",
+    "build": "dotenv -e .env.production react-app-rewired build",
+    "test": "dotenv -e .env.test react-app-rewired test --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --noEmit"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2",
+    "file-loader": "^6.2.0",
+    "react-app-rewired": "^2.2.1",
+    "typescript": "^4.9.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "description": "Embeddable lens configurator for eyewear stores",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lensforge/lensforge.git"
+  },
+  "homepage": "https://lensforge.github.io/lensforge/",
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
+  }
+}
