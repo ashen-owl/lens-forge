@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo/logo.svg" alt="LensForge" height="64" />
+  <img src="public/images/logo/logo-readme.svg" alt="LensForge" height="64" />
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 ![LensForge on a laptop and a phone](public/lensforge-showcase.gif)
 
 <p align="center">
-  Separate recordings: <a href="public/lensforge-flow.gif">desktop</a> · <a href="public/lensforge-flow-mobile.gif">phone</a>
+<a href="https://ashen-owl.github.io/lens-forge/"><b>Live demo</b></a> · Separate recordings: <a href="public/lensforge-flow.gif">desktop</a> · <a href="public/lensforge-flow-mobile.gif">phone</a>
 </p>
 
 ## What it does
@@ -42,6 +42,7 @@ npm start
 | `npm run lint` | ESLint, fails on any warning |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run build` | Production build using `.env.production` |
+| `npm run build:pages` | Demo build for GitHub Pages using `.env.pages` |
 
 ## Embedding
 
@@ -101,7 +102,7 @@ All environment access lives in `src/api/config.ts`. Create React App exposes on
 | `REACT_APP_DEFAULT_PRODUCT_ID` | `demo-frame` | Fallback frame id |
 | `PUBLIC_URL` | `/` | CRA public path for the build |
 
-`.env.development` and `.env.test` use the mock API; `.env.production` switches to `http`.
+`.env.development` and `.env.test` use the mock API; `.env.production` switches to `http`. `.env.pages` is the public demo: mock API served from `/lens-forge/`.
 
 ### REST API (`http` mode)
 
@@ -112,6 +113,16 @@ All environment access lives in `src/api/config.ts`. Create React App exposes on
 | `POST` | `/prescriptions` | Prescription photo upload, authorized with `data-upload-token` |
 
 The mock implementation in `src/api/mock/` follows the same contract, and `src/api/mock/fixtures/valuesResponse.example.json` shows a full `/lens-values` response.
+
+## Deployment
+
+`.github/workflows/deploy.yml` runs on every pull request, on pushes to `main` and on manual dispatch:
+
+1. `npm ci`, then lint, typecheck and tests.
+2. `npm run build:pages` — the demo build with the mock API.
+3. On `main` and manual runs only: the build is published to GitHub Pages at <https://ashen-owl.github.io/lens-forge/>.
+
+One-time setup: in the repository settings open **Pages** and set **Source** to **GitHub Actions**.
 
 ## Project structure
 

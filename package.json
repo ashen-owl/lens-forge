@@ -27,6 +27,7 @@
   "scripts": {
     "start": "dotenv -e .env.development react-app-rewired start",
     "build": "dotenv -e .env.production react-app-rewired build",
+    "build:pages": "dotenv -e .env.pages react-app-rewired build",
     "test": "dotenv -e .env.test react-app-rewired test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint src --max-warnings=0",
@@ -61,9 +62,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lensforge/lensforge.git"
+    "url": "git+https://github.com/ashen-owl/lens-forge.git"
   },
-  "homepage": "https://lensforge.github.io/lensforge/",
+  "homepage": "https://ashen-owl.github.io/lens-forge/",
   "jest": {
     "moduleNameMapper": {
       "^axios$": "axios/dist/node/axios.cjs"
